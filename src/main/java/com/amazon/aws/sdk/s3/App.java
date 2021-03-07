@@ -20,8 +20,9 @@ public class App {
 
         List<Bucket> bucketList = listAllS3Bucket.listAllTheBucket();
 
-        System.out.println(bucketList);
-
+        bucketList.forEach(name -> {
+            System.out.println(name.getName());
+        });
 
     }
 
