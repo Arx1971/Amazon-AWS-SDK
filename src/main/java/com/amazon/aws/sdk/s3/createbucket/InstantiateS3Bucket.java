@@ -10,8 +10,8 @@ import software.amazon.awssdk.services.s3.model.S3Exception;
 public class InstantiateS3Bucket {
 
     private final S3Client s3Client;
-    private String bucketName;
-    private Region region;
+    private final String bucketName;
+    private final Region region;
 
     public InstantiateS3Bucket(String bucketName) {
         this.bucketName = bucketName;
