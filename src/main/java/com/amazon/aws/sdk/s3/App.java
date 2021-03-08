@@ -22,7 +22,9 @@ public class App {
         });
 
         PutObjectInS3Bucket putObjectInS3Bucket = new
-                PutObjectInS3Bucket("bucket-1615102333283", "files_input.txt", "c:/Users/rahin/aws_keys/first_up.txt");
+                PutObjectInS3Bucket("bucket-1615102333283",
+                "files_input.txt",
+                "c:/Users/rahin/aws_keys/first_up.txt");
 
         System.out.println(putObjectInS3Bucket.putS3Object());
 
