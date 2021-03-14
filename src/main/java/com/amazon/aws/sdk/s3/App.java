@@ -1,10 +1,6 @@
 package com.amazon.aws.sdk.s3;
 
-import com.amazon.aws.sdk.s3.listofbucket.ListAllS3Bucket;
-import com.amazon.aws.sdk.s3.putobject.PutObjectInS3Bucket;
-import com.amazonaws.services.s3.model.Bucket;
-
-import java.util.List;
+import com.amazon.aws.sdk.s3.deleteobject.DeleteSingleObjectFromS3Bucket;
 
 public class App {
 
@@ -13,7 +9,7 @@ public class App {
         /*InstantiateS3Bucket instantiateS3Bucket = new InstantiateS3Bucket(
                 "bucket-" + System.currentTimeMillis());*/
 
-        ListAllS3Bucket listAllS3Bucket = new ListAllS3Bucket();
+        /*ListAllS3Bucket listAllS3Bucket = new ListAllS3Bucket();
 
         List<Bucket> bucketList = listAllS3Bucket.listAllTheBucket();
 
@@ -26,7 +22,9 @@ public class App {
                 "files_input.txt",
                 "c:/Users/rahin/aws_keys/first_up.txt");
 
-        System.out.println(putObjectInS3Bucket.putS3Object());
+        System.out.println(putObjectInS3Bucket.putS3Object());*/
+
+        DeleteSingleObjectFromS3Bucket deleteSingleObjectFromS3Bucket = new DeleteSingleObjectFromS3Bucket("dct-user-data-lab-1971", "index.txt");
 
     }
 
